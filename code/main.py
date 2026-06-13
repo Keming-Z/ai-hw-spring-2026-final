@@ -16,6 +16,7 @@ import json
 import math
 import random
 import shutil
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Tuple, Iterable
@@ -28,6 +29,8 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 
 SEED = 21
+DEMO_QUERY_COUNT = 48
+QUALITATIVE_QUERY_COUNT = 12
 random.seed(SEED)
 np.random.seed(SEED)
 torch.manual_seed(SEED)
@@ -40,6 +43,18 @@ if OUT.exists():
     shutil.rmtree(OUT)
 OUT.mkdir(parents=True, exist_ok=True)
 IMG_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def print_progress(step: int, total: int, label: str, detail: str = ""):
+    width = 30
+    fraction = step / total if total else 1.0
+    filled = round(width * fraction)
+    bar = "#" * filled + "." * (width - filled)
+    suffix = f" | {detail}" if detail else ""
+    sys.stdout.write(f"\r{label}: [{bar}] {step}/{total} ({fraction * 100:5.1f}%){suffix}        ")
+    sys.stdout.flush()
+    if step >= total:
+        sys.stdout.write("\n")
 
 COLORS = {
     "red": (220, 45, 45),
@@ -358,7 +373,7 @@ def evaluate(method: str, items: List[Item], eval_queries: List[Tuple[str, Item]
     }
 
 
-def plot_metrics(metrics: Dict[str, Dict[str, float]], path: Path):
+def plot_metrics(metrics: Dict[str, Dict[str, float]], path: Path, eval_count: int):
     import matplotlib.pyplot as plt
     labels = ["Random", "Keyword", "Mini-CLIP"]
     top1 = [metrics["random"]["top1"], metrics["keyword"]["top1"], metrics["clip"]["top1"]]
@@ -371,7 +386,8 @@ def plot_metrics(metrics: Dict[str, Dict[str, float]], path: Path):
     plt.xticks(x, labels)
     plt.ylabel("Accuracy")
     plt.ylim(0, 1.0)
-    plt.title("Hard query retrieval: stronger baseline + distractors")
+    plt.title(f"Hard query retrieval across {eval_count} queries")
+    plt.figtext(0.5, 0.01, "Top-k accuracy with stronger keyword baseline and visual distractors", ha="center", fontsize=8)
     plt.legend()
     for xi, v in zip(x - width/2, top1):
         plt.text(xi, v + 0.02, f"{v*100:.0f}%", ha="center", fontsize=8)
@@ -420,10 +436,17 @@ def draw_architecture(path: Path):
     img.save(path)
 
 
-def qualitative_grid(items: List[Item], eval_queries: List[Tuple[str, Item]], model: MiniCLIP, vocab: Vocab, img_z: torch.Tensor, path: Path):
-    # Use handpicked queries that show successes and one realistic miss.
-    chosen = eval_queries[:4]
-    W, H = 1500, 980
+def qualitative_grid(
+    items: List[Item],
+    eval_queries: List[Tuple[str, Item]],
+    model: MiniCLIP,
+    vocab: Vocab,
+    img_z: torch.Tensor,
+    path: Path,
+    query_count: int,
+):
+    chosen = eval_queries[:query_count]
+    W, H = 1500, 40 + len(chosen) * 235
     img = Image.new("RGB", (W, H), (255, 255, 255))
     d = ImageDraw.Draw(img)
     y = 30
@@ -446,9 +469,16 @@ def qualitative_grid(items: List[Item], eval_queries: List[Tuple[str, Item]], mo
 
 
 def main():
+    print("Preparing synthetic shape dataset and hard text queries...")
     items = make_items()
     train_pairs = [(it, cap) for it in items for cap in training_captions(it)]
     eval_q = hard_queries(items, n=48)
+    demo_count = min(DEMO_QUERY_COUNT, len(eval_q))
+    qualitative_count = min(QUALITATIVE_QUERY_COUNT, len(eval_q))
+    print(
+        f"Dataset ready: {len(items)} images, {len(train_pairs)} training pairs, "
+        f"{len(eval_q)} hard queries. Demo will run {demo_count} queries."
+    )
     all_texts = [cap for _, cap in train_pairs] + [q for q, _ in eval_q]
     vocab = Vocab(all_texts)
     ds = PairDataset(train_pairs, vocab)
@@ -457,6 +487,7 @@ def main():
     opt = torch.optim.AdamW(model.parameters(), lr=2e-3, weight_decay=1e-4)
     losses = []
     epochs = 18
+    print(f"Training Mini-CLIP for {epochs} epochs. This is the longest step.")
     for ep in range(epochs):
         model.train()
         total = 0.0
@@ -466,26 +497,38 @@ def main():
             opt.zero_grad(); loss.backward(); opt.step()
             total += float(loss.detach())
         losses.append(total / len(loader))
+        print_progress(ep + 1, epochs, "Training", f"loss={losses[-1]:.4f}")
 
+    print("Computing image embeddings and retrieval metrics...")
     img_z = image_embeddings(model, items)
     metrics = {
         "random": evaluate("random", items, eval_q),
         "keyword": evaluate("keyword", items, eval_q),
         "clip": evaluate("clip", items, eval_q, model=model, vocab=vocab, img_z=img_z),
     }
-    plot_metrics(metrics, OUT / "metrics_chart.png")
-    plot_loss(losses, OUT / "loss_curve.png")
-    draw_architecture(OUT / "architecture.png")
-    qualitative_grid(items, eval_q, model, vocab, img_z, OUT / "qualitative_results.png")
-    torch.save(model.state_dict(), OUT / "mini_clip_realistic_model.pt")
+    artifact_steps = [
+        ("metrics chart", lambda: plot_metrics(metrics, OUT / "metrics_chart.png", len(eval_q))),
+        ("loss curve", lambda: plot_loss(losses, OUT / "loss_curve.png")),
+        ("architecture diagram", lambda: draw_architecture(OUT / "architecture.png")),
+        ("qualitative results", lambda: qualitative_grid(items, eval_q, model, vocab, img_z, OUT / "qualitative_results.png", qualitative_count)),
+        ("model checkpoint", lambda: torch.save(model.state_dict(), OUT / "mini_clip_realistic_model.pt")),
+    ]
+    print("Generating charts, diagrams, and model checkpoint...")
+    for i, (name, build_artifact) in enumerate(artifact_steps, start=1):
+        build_artifact()
+        print_progress(i, len(artifact_steps), "Artifacts", name)
 
     # Save examples used in slides/demo
-    for it in items[:20]:
+    sample_items = items[:20]
+    print("Saving sample images for slides and demos...")
+    for i, it in enumerate(sample_items, start=1):
         draw_shape(it).save(IMG_DIR / f"item_{it.idx}_{it.label.replace(' ', '_')}.png")
+        print_progress(i, len(sample_items), "Sample images", it.label)
 
     demo_lines = []
     demo_results = {}
-    for q, target in eval_q[:6]:
+    print("Running demo retrieval searches. Each query returns the top 5 matches.")
+    for i, (q, target) in enumerate(eval_q[:demo_count], start=1):
         res = search_clip(model, vocab, items, q, img_z=img_z, top_k=5, query_noise=0.0)
         lines = [f"QUERY: {q}", f"TARGET: {target.label}"]
         demo_results[q] = []
@@ -495,12 +538,15 @@ def main():
             lines.append(f"  {rank}. {it.label} | score={score:.3f}{hit}")
             demo_results[q].append({"rank": rank, "item": it.label, "score": score, "target": it.idx == target.idx})
         demo_lines.extend(lines + [""])
+        print_progress(i, demo_count, "Demo queries", q)
     (OUT / "demo_output.txt").write_text("\n".join(demo_lines))
     results = {
         "dataset": {
             "total_images": len(items),
             "training_pairs": len(train_pairs),
             "hard_queries": len(eval_q),
+            "demo_queries": demo_count,
+            "qualitative_queries": qualitative_count,
             "colors": list(COLORS.keys()),
             "shapes": SHAPES,
             "positions": POSITIONS,

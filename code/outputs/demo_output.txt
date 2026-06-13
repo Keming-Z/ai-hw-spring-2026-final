@@ -45,3 +45,339 @@ TARGET: large yellow star right
   3. large yellow circle right | score=0.606
   4. large orange circle right | score=0.577
   5. small orange square right | score=0.522
+
+QUERY: I need the middle big red triangle
+TARGET: large red triangle center
+  1. large red triangle center | score=0.878 <== target
+  2. large red triangle left | score=0.802
+  3. large red square center | score=0.766
+  4. small red triangle center | score=0.728
+  5. large red square left | score=0.695
+
+QUERY: retrieve the large round shape with blue color near the center
+TARGET: large blue circle center
+  1. small blue square center | score=0.784
+  2. large purple circle center | score=0.733
+  3. large blue star center | score=0.732
+  4. large blue circle center | score=0.723 <== target
+  5. large purple star center | score=0.712
+
+QUERY: show me the tiny blue box shape at the left side
+TARGET: small blue square left
+  1. small blue square left | score=0.785 <== target
+  2. large blue square left | score=0.617
+  3. large blue triangle left | score=0.594
+  4. small blue triangle left | score=0.571
+  5. small purple triangle left | score=0.564
+
+QUERY: please find a red five point shape that is large and on the center
+TARGET: large red star center
+  1. large red circle center | score=0.859
+  2. large red square center | score=0.793
+  3. small red square center | score=0.752
+  4. large red triangle center | score=0.722
+  5. large red star center | score=0.695 <== target
+
+QUERY: I need the right side tiny red star
+TARGET: small red star right
+  1. small red star right | score=0.855 <== target
+  2. small red circle right | score=0.811
+  3. large red star right | score=0.787
+  4. small red circle left | score=0.762
+  5. small red star left | score=0.755
+
+QUERY: retrieve the small round shape with orange color near the right
+TARGET: small orange circle right
+  1. small yellow circle right | score=0.763
+  2. small orange circle right | score=0.753 <== target
+  3. small purple circle right | score=0.732
+  4. small green circle right | score=0.587
+  5. small purple square right | score=0.545
+
+QUERY: show me the tiny green round shape at the left side
+TARGET: small green circle left
+  1. small purple square left | score=0.758
+  2. small green square left | score=0.754
+  3. small green circle left | score=0.741 <== target
+  4. large purple circle left | score=0.730
+  5. large green circle left | score=0.709
+
+QUERY: please find a yellow five point shape that is small and on the center
+TARGET: small yellow star center
+  1. small orange square center | score=0.786
+  2. small yellow circle center | score=0.743
+  3. small yellow square center | score=0.697
+  4. small orange circle center | score=0.656
+  5. small purple circle center | score=0.581
+
+QUERY: I need the left side big yellow star
+TARGET: large yellow star left
+  1. large orange star left | score=0.901
+  2. large yellow star left | score=0.778 <== target
+  3. small orange star left | score=0.703
+  4. large red star left | score=0.642
+  5. small yellow star left | score=0.600
+
+QUERY: retrieve the small round shape with red color near the left
+TARGET: small red circle left
+  1. small orange circle left | score=0.807
+  2. small red circle left | score=0.768 <== target
+  3. small blue circle left | score=0.730
+  4. small purple circle left | score=0.669
+  5. small red star left | score=0.633
+
+QUERY: show me the tiny purple three sided shape at the middle
+TARGET: small purple triangle center
+  1. large purple triangle center | score=0.863
+  2. small purple triangle center | score=0.856 <== target
+  3. small purple triangle left | score=0.750
+  4. large purple triangle right | score=0.734
+  5. small purple triangle right | score=0.690
+
+QUERY: please find a yellow three sided shape that is small and on the right
+TARGET: small yellow triangle right
+  1. small orange square right | score=0.700
+  2. small orange triangle right | score=0.626
+  3. small purple square right | score=0.623
+  4. small yellow square right | score=0.600
+  5. small red square right | score=0.564
+
+QUERY: I need the left side tiny blue circle
+TARGET: small blue circle left
+  1. small blue circle left | score=0.880 <== target
+  2. small red circle left | score=0.822
+  3. small blue square left | score=0.767
+  4. small orange circle left | score=0.708
+  5. small blue triangle left | score=0.687
+
+QUERY: retrieve the small round shape with green color near the right
+TARGET: small green circle right
+  1. small green circle right | score=0.830 <== target
+  2. small green star right | score=0.763
+  3. small green square right | score=0.747
+  4. small purple circle right | score=0.715
+  5. small green circle left | score=0.688
+
+QUERY: show me the tiny yellow round shape at the left side
+TARGET: small yellow circle left
+  1. small yellow circle left | score=0.768 <== target
+  2. small orange square left | score=0.743
+  3. large yellow circle left | score=0.687
+  4. small yellow square left | score=0.670
+  5. small orange circle left | score=0.667
+
+QUERY: please find a blue three sided shape that is small and on the left
+TARGET: small blue triangle left
+  1. small blue triangle left | score=0.871 <== target
+  2. small blue triangle center | score=0.779
+  3. large blue triangle center | score=0.700
+  4. small blue triangle right | score=0.689
+  5. large blue triangle left | score=0.672
+
+QUERY: I need the right side big red square
+TARGET: large red square right
+  1. large red square right | score=0.903 <== target
+  2. large red square left | score=0.796
+  3. small red square right | score=0.760
+  4. large red square center | score=0.751
+  5. large red triangle right | score=0.748
+
+QUERY: retrieve the large three sided shape with blue color near the right
+TARGET: large blue triangle right
+  1. large purple triangle right | score=0.784
+  2. large blue triangle right | score=0.775 <== target
+  3. small purple triangle right | score=0.746
+  4. small blue triangle right | score=0.710
+  5. small blue triangle center | score=0.672
+
+QUERY: show me the tiny red round shape at the right side
+TARGET: small red circle right
+  1. small red circle right | score=0.824 <== target
+  2. small red square right | score=0.795
+  3. large red circle right | score=0.728
+  4. small red triangle right | score=0.668
+  5. small orange circle right | score=0.616
+
+QUERY: please find a orange five point shape that is large and on the center
+TARGET: large orange star center
+  1. large orange circle center | score=0.784
+  2. large red circle center | score=0.765
+  3. large red square center | score=0.732
+  4. large blue circle center | score=0.679
+  5. large blue square center | score=0.636
+
+QUERY: I need the left side big green circle
+TARGET: large green circle left
+  1. large green circle left | score=0.886 <== target
+  2. large yellow circle left | score=0.823
+  3. large green square left | score=0.728
+  4. large green star left | score=0.687
+  5. large purple circle left | score=0.684
+
+QUERY: retrieve the small box shape with green color near the right
+TARGET: small green square right
+  1. small green square right | score=0.839 <== target
+  2. small purple square right | score=0.742
+  3. small green triangle center | score=0.729
+  4. small green square center | score=0.727
+  5. small yellow square right | score=0.693
+
+QUERY: show me the tiny orange three sided shape at the left side
+TARGET: small orange triangle left
+  1. small orange triangle left | score=0.826 <== target
+  2. large orange triangle left | score=0.807
+  3. small red triangle left | score=0.736
+  4. small yellow triangle left | score=0.716
+  5. large red triangle left | score=0.703
+
+QUERY: please find a orange box shape that is small and on the center
+TARGET: small orange square center
+  1. small orange square center | score=0.864 <== target
+  2. small red square center | score=0.711
+  3. small yellow square center | score=0.699
+  4. large orange square center | score=0.690
+  5. large yellow square center | score=0.644
+
+QUERY: I need the right side big purple square
+TARGET: large purple square right
+  1. large purple square right | score=0.809 <== target
+  2. large purple square center | score=0.746
+  3. large purple square left | score=0.737
+  4. large blue square right | score=0.655
+  5. large blue square center | score=0.613
+
+QUERY: retrieve the large three sided shape with orange color near the right
+TARGET: large orange triangle right
+  1. large purple triangle right | score=0.777
+  2. large yellow triangle right | score=0.753
+  3. small purple triangle right | score=0.715
+  4. large orange triangle right | score=0.687 <== target
+  5. small yellow triangle right | score=0.677
+
+QUERY: show me the big red round shape at the left side
+TARGET: large red circle left
+  1. large red circle left | score=0.827 <== target
+  2. large red square left | score=0.826
+  3. large red triangle left | score=0.754
+  4. large orange circle left | score=0.701
+  5. small red square left | score=0.657
+
+QUERY: please find a orange round shape that is large and on the center
+TARGET: large orange circle center
+  1. large orange circle center | score=0.789 <== target
+  2. large red square center | score=0.706
+  3. small orange square center | score=0.703
+  4. large yellow circle center | score=0.689
+  5. large red circle center | score=0.688
+
+QUERY: I need the right side big orange square
+TARGET: large orange square right
+  1. large red square right | score=0.869
+  2. large orange square right | score=0.803 <== target
+  3. large red square left | score=0.756
+  4. large red square center | score=0.706
+  5. large orange square left | score=0.688
+
+QUERY: retrieve the large box shape with green color near the center
+TARGET: large green square center
+  1. large green triangle center | score=0.841
+  2. large green square center | score=0.796 <== target
+  3. small green square center | score=0.796
+  4. large green star center | score=0.774
+  5. large purple square center | score=0.733
+
+QUERY: show me the tiny yellow three sided shape at the left side
+TARGET: small yellow triangle left
+  1. small yellow triangle left | score=0.854 <== target
+  2. small orange triangle left | score=0.766
+  3. large orange triangle left | score=0.759
+  4. large yellow triangle left | score=0.730
+  5. small purple triangle left | score=0.677
+
+QUERY: please find a purple three sided shape that is large and on the left
+TARGET: large purple triangle left
+  1. large purple triangle center | score=0.875
+  2. large purple triangle left | score=0.786 <== target
+  3. large purple triangle right | score=0.741
+  4. large blue triangle center | score=0.730
+  5. large blue triangle right | score=0.674
+
+QUERY: I need the middle big green triangle
+TARGET: large green triangle center
+  1. large purple triangle left | score=0.748
+  2. large yellow triangle center | score=0.736
+  3. large purple triangle center | score=0.703
+  4. large orange triangle center | score=0.681
+  5. large green triangle center | score=0.678 <== target
+
+QUERY: retrieve the small three sided shape with purple color near the right
+TARGET: small purple triangle right
+  1. small purple triangle right | score=0.880 <== target
+  2. small purple triangle center | score=0.774
+  3. small green triangle right | score=0.713
+  4. small purple star right | score=0.700
+  5. small green triangle center | score=0.694
+
+QUERY: show me the tiny green three sided shape at the middle
+TARGET: small green triangle center
+  1. large purple triangle center | score=0.817
+  2. large green triangle center | score=0.811
+  3. small green triangle center | score=0.783 <== target
+  4. large purple triangle right | score=0.744
+  5. large purple triangle left | score=0.719
+
+QUERY: please find a purple five point shape that is small and on the left
+TARGET: small purple star left
+  1. small purple circle left | score=0.745
+  2. small purple circle center | score=0.676
+  3. small purple star left | score=0.662 <== target
+  4. small purple square left | score=0.633
+  5. small purple star center | score=0.617
+
+QUERY: I need the middle big blue square
+TARGET: large blue square center
+  1. large blue square center | score=0.835 <== target
+  2. large red square center | score=0.809
+  3. large blue square left | score=0.721
+  4. large blue triangle center | score=0.681
+  5. large red square left | score=0.672
+
+QUERY: retrieve the large three sided shape with orange color near the left
+TARGET: large orange triangle left
+  1. large purple triangle left | score=0.755
+  2. small purple triangle left | score=0.677
+  3. large orange triangle left | score=0.635 <== target
+  4. small green triangle left | score=0.620
+  5. small yellow triangle left | score=0.615
+
+QUERY: show me the tiny green box shape at the left side
+TARGET: small green square left
+  1. small green square left | score=0.819 <== target
+  2. large green square left | score=0.801
+  3. large purple square left | score=0.788
+  4. large yellow square left | score=0.720
+  5. small purple square left | score=0.693
+
+QUERY: please find a purple box shape that is large and on the left
+TARGET: large purple square left
+  1. large purple square center | score=0.871
+  2. large purple square left | score=0.776 <== target
+  3. large blue square center | score=0.745
+  4. large purple square right | score=0.739
+  5. large purple triangle center | score=0.693
+
+QUERY: I need the middle tiny blue star
+TARGET: small blue star center
+  1. small blue star center | score=0.852 <== target
+  2. small red star center | score=0.817
+  3. small blue star left | score=0.795
+  4. small blue circle center | score=0.750
+  5. small blue circle left | score=0.671
+
+QUERY: retrieve the small box shape with red color near the left
+TARGET: small red square left
+  1. small orange square left | score=0.711
+  2. small red square left | score=0.653 <== target
+  3. small orange circle left | score=0.612
+  4. small blue square left | score=0.590
+  5. small purple triangle left | score=0.568

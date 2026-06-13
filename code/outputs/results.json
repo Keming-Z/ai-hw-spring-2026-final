@@ -3,6 +3,8 @@
     "total_images": 144,
     "training_pairs": 576,
     "hard_queries": 48,
+    "demo_queries": 48,
+    "qualitative_queries": 12,
     "colors": [
       "red",
       "blue",
@@ -250,6 +252,1350 @@
         "rank": 5,
         "item": "small orange square right",
         "score": 0.5224693417549133,
+        "target": false
+      }
+    ],
+    "I need the middle big red triangle": [
+      {
+        "rank": 1,
+        "item": "large red triangle center",
+        "score": 0.8775893449783325,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large red triangle left",
+        "score": 0.8019723892211914,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large red square center",
+        "score": 0.7662220001220703,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small red triangle center",
+        "score": 0.727893590927124,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red square left",
+        "score": 0.6947119235992432,
+        "target": false
+      }
+    ],
+    "retrieve the large round shape with blue color near the center": [
+      {
+        "rank": 1,
+        "item": "small blue square center",
+        "score": 0.7837036848068237,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large purple circle center",
+        "score": 0.7331427931785583,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large blue star center",
+        "score": 0.7322084307670593,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large blue circle center",
+        "score": 0.7233444452285767,
+        "target": true
+      },
+      {
+        "rank": 5,
+        "item": "large purple star center",
+        "score": 0.7122994661331177,
+        "target": false
+      }
+    ],
+    "show me the tiny blue box shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small blue square left",
+        "score": 0.7846483588218689,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large blue square left",
+        "score": 0.6172538995742798,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large blue triangle left",
+        "score": 0.5941232442855835,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue triangle left",
+        "score": 0.5711916089057922,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple triangle left",
+        "score": 0.5637240409851074,
+        "target": false
+      }
+    ],
+    "please find a red five point shape that is large and on the center": [
+      {
+        "rank": 1,
+        "item": "large red circle center",
+        "score": 0.8589106798171997,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large red square center",
+        "score": 0.7931890487670898,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small red square center",
+        "score": 0.7524598836898804,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large red triangle center",
+        "score": 0.7224582433700562,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red star center",
+        "score": 0.6948007345199585,
+        "target": true
+      }
+    ],
+    "I need the right side tiny red star": [
+      {
+        "rank": 1,
+        "item": "small red star right",
+        "score": 0.8548978567123413,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small red circle right",
+        "score": 0.8110440969467163,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large red star right",
+        "score": 0.7874327898025513,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small red circle left",
+        "score": 0.7617536783218384,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small red star left",
+        "score": 0.754727840423584,
+        "target": false
+      }
+    ],
+    "retrieve the small round shape with orange color near the right": [
+      {
+        "rank": 1,
+        "item": "small yellow circle right",
+        "score": 0.7631055116653442,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small orange circle right",
+        "score": 0.7534900903701782,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small purple circle right",
+        "score": 0.731983482837677,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small green circle right",
+        "score": 0.5870563983917236,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple square right",
+        "score": 0.5447977185249329,
+        "target": false
+      }
+    ],
+    "show me the tiny green round shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small purple square left",
+        "score": 0.7575494647026062,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small green square left",
+        "score": 0.7539185881614685,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small green circle left",
+        "score": 0.7405451536178589,
+        "target": true
+      },
+      {
+        "rank": 4,
+        "item": "large purple circle left",
+        "score": 0.7302852272987366,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large green circle left",
+        "score": 0.708853006362915,
+        "target": false
+      }
+    ],
+    "please find a yellow five point shape that is small and on the center": [
+      {
+        "rank": 1,
+        "item": "small orange square center",
+        "score": 0.7857221364974976,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small yellow circle center",
+        "score": 0.743279218673706,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small yellow square center",
+        "score": 0.6970006227493286,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small orange circle center",
+        "score": 0.6560226678848267,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple circle center",
+        "score": 0.580542802810669,
+        "target": false
+      }
+    ],
+    "I need the left side big yellow star": [
+      {
+        "rank": 1,
+        "item": "large orange star left",
+        "score": 0.9012036919593811,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large yellow star left",
+        "score": 0.7783066034317017,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small orange star left",
+        "score": 0.7034775018692017,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large red star left",
+        "score": 0.6421406865119934,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small yellow star left",
+        "score": 0.5999115705490112,
+        "target": false
+      }
+    ],
+    "retrieve the small round shape with red color near the left": [
+      {
+        "rank": 1,
+        "item": "small orange circle left",
+        "score": 0.8072144389152527,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small red circle left",
+        "score": 0.7678123712539673,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small blue circle left",
+        "score": 0.7296942472457886,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple circle left",
+        "score": 0.6688386797904968,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small red star left",
+        "score": 0.6331534385681152,
+        "target": false
+      }
+    ],
+    "show me the tiny purple three sided shape at the middle": [
+      {
+        "rank": 1,
+        "item": "large purple triangle center",
+        "score": 0.8632997274398804,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small purple triangle center",
+        "score": 0.8557472229003906,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small purple triangle left",
+        "score": 0.7501555681228638,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large purple triangle right",
+        "score": 0.733582079410553,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple triangle right",
+        "score": 0.6904682517051697,
+        "target": false
+      }
+    ],
+    "please find a yellow three sided shape that is small and on the right": [
+      {
+        "rank": 1,
+        "item": "small orange square right",
+        "score": 0.7003763914108276,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small orange triangle right",
+        "score": 0.6264277100563049,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small purple square right",
+        "score": 0.6226871013641357,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small yellow square right",
+        "score": 0.5998918414115906,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small red square right",
+        "score": 0.5639435052871704,
+        "target": false
+      }
+    ],
+    "I need the left side tiny blue circle": [
+      {
+        "rank": 1,
+        "item": "small blue circle left",
+        "score": 0.880240797996521,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small red circle left",
+        "score": 0.8216970562934875,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small blue square left",
+        "score": 0.7665126323699951,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small orange circle left",
+        "score": 0.7081781625747681,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small blue triangle left",
+        "score": 0.6867314577102661,
+        "target": false
+      }
+    ],
+    "retrieve the small round shape with green color near the right": [
+      {
+        "rank": 1,
+        "item": "small green circle right",
+        "score": 0.830155074596405,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small green star right",
+        "score": 0.7634456157684326,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small green square right",
+        "score": 0.7465466856956482,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple circle right",
+        "score": 0.714640200138092,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small green circle left",
+        "score": 0.6880429983139038,
+        "target": false
+      }
+    ],
+    "show me the tiny yellow round shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small yellow circle left",
+        "score": 0.7682389616966248,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small orange square left",
+        "score": 0.7426577210426331,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large yellow circle left",
+        "score": 0.6865525245666504,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small yellow square left",
+        "score": 0.6695079803466797,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small orange circle left",
+        "score": 0.666515052318573,
+        "target": false
+      }
+    ],
+    "please find a blue three sided shape that is small and on the left": [
+      {
+        "rank": 1,
+        "item": "small blue triangle left",
+        "score": 0.8713215589523315,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small blue triangle center",
+        "score": 0.7790762782096863,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large blue triangle center",
+        "score": 0.7001128792762756,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue triangle right",
+        "score": 0.689012885093689,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large blue triangle left",
+        "score": 0.6721702218055725,
+        "target": false
+      }
+    ],
+    "I need the right side big red square": [
+      {
+        "rank": 1,
+        "item": "large red square right",
+        "score": 0.9033567905426025,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large red square left",
+        "score": 0.7962175607681274,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small red square right",
+        "score": 0.7596485614776611,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large red square center",
+        "score": 0.7510291337966919,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red triangle right",
+        "score": 0.7480268478393555,
+        "target": false
+      }
+    ],
+    "retrieve the large three sided shape with blue color near the right": [
+      {
+        "rank": 1,
+        "item": "large purple triangle right",
+        "score": 0.7841342687606812,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large blue triangle right",
+        "score": 0.7751857042312622,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small purple triangle right",
+        "score": 0.7463752031326294,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue triangle right",
+        "score": 0.7098850011825562,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small blue triangle center",
+        "score": 0.6723074316978455,
+        "target": false
+      }
+    ],
+    "show me the tiny red round shape at the right side": [
+      {
+        "rank": 1,
+        "item": "small red circle right",
+        "score": 0.8241080045700073,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small red square right",
+        "score": 0.7951390743255615,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large red circle right",
+        "score": 0.7275547981262207,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small red triangle right",
+        "score": 0.667797327041626,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small orange circle right",
+        "score": 0.6155318021774292,
+        "target": false
+      }
+    ],
+    "please find a orange five point shape that is large and on the center": [
+      {
+        "rank": 1,
+        "item": "large orange circle center",
+        "score": 0.784302830696106,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large red circle center",
+        "score": 0.7651333808898926,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large red square center",
+        "score": 0.7318389415740967,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large blue circle center",
+        "score": 0.6794123649597168,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large blue square center",
+        "score": 0.6360459327697754,
+        "target": false
+      }
+    ],
+    "I need the left side big green circle": [
+      {
+        "rank": 1,
+        "item": "large green circle left",
+        "score": 0.8859648108482361,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large yellow circle left",
+        "score": 0.8229596614837646,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large green square left",
+        "score": 0.7282164096832275,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large green star left",
+        "score": 0.6871939897537231,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large purple circle left",
+        "score": 0.6844013929367065,
+        "target": false
+      }
+    ],
+    "retrieve the small box shape with green color near the right": [
+      {
+        "rank": 1,
+        "item": "small green square right",
+        "score": 0.8390069007873535,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small purple square right",
+        "score": 0.7424944043159485,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small green triangle center",
+        "score": 0.7294909954071045,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small green square center",
+        "score": 0.7271783351898193,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small yellow square right",
+        "score": 0.6934326887130737,
+        "target": false
+      }
+    ],
+    "show me the tiny orange three sided shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small orange triangle left",
+        "score": 0.8255500793457031,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large orange triangle left",
+        "score": 0.8070778846740723,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small red triangle left",
+        "score": 0.7358372211456299,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small yellow triangle left",
+        "score": 0.7162473201751709,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red triangle left",
+        "score": 0.7031612992286682,
+        "target": false
+      }
+    ],
+    "please find a orange box shape that is small and on the center": [
+      {
+        "rank": 1,
+        "item": "small orange square center",
+        "score": 0.8636907339096069,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small red square center",
+        "score": 0.7111281156539917,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small yellow square center",
+        "score": 0.698553204536438,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large orange square center",
+        "score": 0.6901712417602539,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large yellow square center",
+        "score": 0.6439602375030518,
+        "target": false
+      }
+    ],
+    "I need the right side big purple square": [
+      {
+        "rank": 1,
+        "item": "large purple square right",
+        "score": 0.8086816072463989,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large purple square center",
+        "score": 0.7464513182640076,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large purple square left",
+        "score": 0.7367529273033142,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large blue square right",
+        "score": 0.6549966931343079,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large blue square center",
+        "score": 0.6125674247741699,
+        "target": false
+      }
+    ],
+    "retrieve the large three sided shape with orange color near the right": [
+      {
+        "rank": 1,
+        "item": "large purple triangle right",
+        "score": 0.7771568894386292,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large yellow triangle right",
+        "score": 0.7529313564300537,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small purple triangle right",
+        "score": 0.7154759168624878,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large orange triangle right",
+        "score": 0.6866680979728699,
+        "target": true
+      },
+      {
+        "rank": 5,
+        "item": "small yellow triangle right",
+        "score": 0.6771591901779175,
+        "target": false
+      }
+    ],
+    "show me the big red round shape at the left side": [
+      {
+        "rank": 1,
+        "item": "large red circle left",
+        "score": 0.8265255689620972,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large red square left",
+        "score": 0.8261241316795349,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large red triangle left",
+        "score": 0.7536133527755737,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large orange circle left",
+        "score": 0.700709342956543,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small red square left",
+        "score": 0.6569746732711792,
+        "target": false
+      }
+    ],
+    "please find a orange round shape that is large and on the center": [
+      {
+        "rank": 1,
+        "item": "large orange circle center",
+        "score": 0.7889840006828308,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large red square center",
+        "score": 0.7056262493133545,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small orange square center",
+        "score": 0.702520489692688,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large yellow circle center",
+        "score": 0.6885453462600708,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red circle center",
+        "score": 0.6877005100250244,
+        "target": false
+      }
+    ],
+    "I need the right side big orange square": [
+      {
+        "rank": 1,
+        "item": "large red square right",
+        "score": 0.8693771958351135,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large orange square right",
+        "score": 0.8032938241958618,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "large red square left",
+        "score": 0.7562087774276733,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large red square center",
+        "score": 0.7058559060096741,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large orange square left",
+        "score": 0.6884617805480957,
+        "target": false
+      }
+    ],
+    "retrieve the large box shape with green color near the center": [
+      {
+        "rank": 1,
+        "item": "large green triangle center",
+        "score": 0.8408318758010864,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large green square center",
+        "score": 0.7963875532150269,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small green square center",
+        "score": 0.7963513135910034,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large green star center",
+        "score": 0.7736747860908508,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large purple square center",
+        "score": 0.7332210540771484,
+        "target": false
+      }
+    ],
+    "show me the tiny yellow three sided shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small yellow triangle left",
+        "score": 0.8542845845222473,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small orange triangle left",
+        "score": 0.7657361626625061,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large orange triangle left",
+        "score": 0.7587012052536011,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large yellow triangle left",
+        "score": 0.7297907471656799,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple triangle left",
+        "score": 0.6773859262466431,
+        "target": false
+      }
+    ],
+    "please find a purple three sided shape that is large and on the left": [
+      {
+        "rank": 1,
+        "item": "large purple triangle center",
+        "score": 0.8754780292510986,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large purple triangle left",
+        "score": 0.78631591796875,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "large purple triangle right",
+        "score": 0.740920901298523,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large blue triangle center",
+        "score": 0.7295440435409546,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large blue triangle right",
+        "score": 0.6739814281463623,
+        "target": false
+      }
+    ],
+    "I need the middle big green triangle": [
+      {
+        "rank": 1,
+        "item": "large purple triangle left",
+        "score": 0.7478171586990356,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large yellow triangle center",
+        "score": 0.7360639572143555,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large purple triangle center",
+        "score": 0.7032667398452759,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large orange triangle center",
+        "score": 0.6809574365615845,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large green triangle center",
+        "score": 0.6783926486968994,
+        "target": true
+      }
+    ],
+    "retrieve the small three sided shape with purple color near the right": [
+      {
+        "rank": 1,
+        "item": "small purple triangle right",
+        "score": 0.8803020119667053,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small purple triangle center",
+        "score": 0.7741263508796692,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small green triangle right",
+        "score": 0.713386595249176,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple star right",
+        "score": 0.6997621059417725,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small green triangle center",
+        "score": 0.6937342286109924,
+        "target": false
+      }
+    ],
+    "show me the tiny green three sided shape at the middle": [
+      {
+        "rank": 1,
+        "item": "large purple triangle center",
+        "score": 0.8173905611038208,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large green triangle center",
+        "score": 0.8111517429351807,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small green triangle center",
+        "score": 0.7832010388374329,
+        "target": true
+      },
+      {
+        "rank": 4,
+        "item": "large purple triangle right",
+        "score": 0.7443751096725464,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large purple triangle left",
+        "score": 0.719447135925293,
+        "target": false
+      }
+    ],
+    "please find a purple five point shape that is small and on the left": [
+      {
+        "rank": 1,
+        "item": "small purple circle left",
+        "score": 0.7452662587165833,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small purple circle center",
+        "score": 0.6764740943908691,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small purple star left",
+        "score": 0.662007212638855,
+        "target": true
+      },
+      {
+        "rank": 4,
+        "item": "small purple square left",
+        "score": 0.6331853866577148,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple star center",
+        "score": 0.616985023021698,
+        "target": false
+      }
+    ],
+    "I need the middle big blue square": [
+      {
+        "rank": 1,
+        "item": "large blue square center",
+        "score": 0.8351585865020752,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large red square center",
+        "score": 0.8091210126876831,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large blue square left",
+        "score": 0.7213101387023926,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large blue triangle center",
+        "score": 0.680601954460144,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large red square left",
+        "score": 0.6723306179046631,
+        "target": false
+      }
+    ],
+    "retrieve the large three sided shape with orange color near the left": [
+      {
+        "rank": 1,
+        "item": "large purple triangle left",
+        "score": 0.7549105882644653,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small purple triangle left",
+        "score": 0.677225649356842,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large orange triangle left",
+        "score": 0.6347256898880005,
+        "target": true
+      },
+      {
+        "rank": 4,
+        "item": "small green triangle left",
+        "score": 0.620460033416748,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small yellow triangle left",
+        "score": 0.6152317523956299,
+        "target": false
+      }
+    ],
+    "show me the tiny green box shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small green square left",
+        "score": 0.819084882736206,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large green square left",
+        "score": 0.801441490650177,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large purple square left",
+        "score": 0.7878084182739258,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large yellow square left",
+        "score": 0.7198538184165955,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple square left",
+        "score": 0.6932991147041321,
+        "target": false
+      }
+    ],
+    "please find a purple box shape that is large and on the left": [
+      {
+        "rank": 1,
+        "item": "large purple square center",
+        "score": 0.8712058663368225,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large purple square left",
+        "score": 0.7764461040496826,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "large blue square center",
+        "score": 0.7452062368392944,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large purple square right",
+        "score": 0.7386674880981445,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large purple triangle center",
+        "score": 0.6933294534683228,
+        "target": false
+      }
+    ],
+    "I need the middle tiny blue star": [
+      {
+        "rank": 1,
+        "item": "small blue star center",
+        "score": 0.8523209095001221,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "small red star center",
+        "score": 0.8169121742248535,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small blue star left",
+        "score": 0.7952960729598999,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue circle center",
+        "score": 0.7497545480728149,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small blue circle left",
+        "score": 0.6709575653076172,
+        "target": false
+      }
+    ],
+    "retrieve the small box shape with red color near the left": [
+      {
+        "rank": 1,
+        "item": "small orange square left",
+        "score": 0.7107588052749634,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small red square left",
+        "score": 0.6533489227294922,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small orange circle left",
+        "score": 0.6115542054176331,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue square left",
+        "score": 0.5895690321922302,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small purple triangle left",
+        "score": 0.5677324533462524,
         "target": false
       }
     ]

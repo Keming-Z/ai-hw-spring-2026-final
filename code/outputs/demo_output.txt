@@ -1,0 +1,47 @@
+QUERY: show me the tiny yellow round shape at the right side
+TARGET: small yellow circle right
+  1. small orange square right | score=0.711
+  2. small yellow square right | score=0.706
+  3. small yellow circle right | score=0.664 <== target
+  4. small purple square right | score=0.619
+  5. large orange circle right | score=0.555
+
+QUERY: please find a purple box shape that is small and on the left
+TARGET: small purple square left
+  1. small purple square center | score=0.753
+  2. small purple square left | score=0.678 <== target
+  3. large purple square center | score=0.642
+  4. small purple square right | score=0.590
+  5. large purple square left | score=0.573
+
+QUERY: I need the middle big purple circle
+TARGET: large purple circle center
+  1. large blue circle center | score=0.821
+  2. large purple circle center | score=0.784 <== target
+  3. large blue square center | score=0.734
+  4. small blue square center | score=0.689
+  5. large orange circle center | score=0.614
+
+QUERY: retrieve the small three sided shape with red color near the center
+TARGET: small red triangle center
+  1. small orange triangle center | score=0.813
+  2. small red triangle center | score=0.775 <== target
+  3. small blue triangle center | score=0.743
+  4. small purple triangle center | score=0.642
+  5. small blue triangle left | score=0.625
+
+QUERY: show me the tiny green five point shape at the left side
+TARGET: small green star left
+  1. small green star left | score=0.827 <== target
+  2. large purple star left | score=0.777
+  3. large green star left | score=0.775
+  4. small purple star left | score=0.772
+  5. small green triangle left | score=0.705
+
+QUERY: please find a yellow five point shape that is large and on the right
+TARGET: large yellow star right
+  1. large orange square right | score=0.624
+  2. large yellow square right | score=0.618
+  3. large yellow circle right | score=0.606
+  4. large orange circle right | score=0.577
+  5. small orange square right | score=0.522

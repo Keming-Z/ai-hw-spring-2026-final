@@ -1,0 +1,264 @@
+{
+  "dataset": {
+    "total_images": 144,
+    "training_pairs": 576,
+    "hard_queries": 48,
+    "colors": [
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "purple",
+      "orange"
+    ],
+    "shapes": [
+      "circle",
+      "square",
+      "triangle",
+      "star"
+    ],
+    "positions": [
+      "left",
+      "center",
+      "right"
+    ],
+    "sizes": [
+      "small",
+      "large"
+    ],
+    "distractor_policy": "All other color/shape/size/position combinations remain in the index, so many nearest neighbors differ by only one attribute."
+  },
+  "training": {
+    "epochs": 18,
+    "final_loss": 0.1733224205672741,
+    "seed": 21,
+    "embedding_dim": 64
+  },
+  "metrics": {
+    "random": {
+      "top1": 0.006944444444444444,
+      "top3": 0.020833333333333332,
+      "top5": 0.034722222222222224,
+      "mrr": 0.03854511922182929,
+      "median_rank": 72.5,
+      "mean_rank": 72.5
+    },
+    "keyword": {
+      "top1": 0.1875,
+      "top3": 0.625,
+      "top5": 0.8541666666666666,
+      "mrr": 0.44760718599033816,
+      "median_rank": 3.0,
+      "mean_rank": 3.8958333333333335
+    },
+    "clip": {
+      "top1": 0.4583333333333333,
+      "top3": 0.8333333333333334,
+      "top5": 0.9166666666666666,
+      "mrr": 0.6538945225526108,
+      "median_rank": 2.0,
+      "mean_rank": 3.6041666666666665
+    }
+  },
+  "demo_results": {
+    "show me the tiny yellow round shape at the right side": [
+      {
+        "rank": 1,
+        "item": "small orange square right",
+        "score": 0.7107840776443481,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small yellow square right",
+        "score": 0.7058461904525757,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "small yellow circle right",
+        "score": 0.6641422510147095,
+        "target": true
+      },
+      {
+        "rank": 4,
+        "item": "small purple square right",
+        "score": 0.6188045740127563,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large orange circle right",
+        "score": 0.5550721883773804,
+        "target": false
+      }
+    ],
+    "please find a purple box shape that is small and on the left": [
+      {
+        "rank": 1,
+        "item": "small purple square center",
+        "score": 0.7528451681137085,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small purple square left",
+        "score": 0.6781450510025024,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "large purple square center",
+        "score": 0.6419207453727722,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple square right",
+        "score": 0.5899052619934082,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large purple square left",
+        "score": 0.5726840496063232,
+        "target": false
+      }
+    ],
+    "I need the middle big purple circle": [
+      {
+        "rank": 1,
+        "item": "large blue circle center",
+        "score": 0.8211387395858765,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large purple circle center",
+        "score": 0.784375786781311,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "large blue square center",
+        "score": 0.7336341142654419,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small blue square center",
+        "score": 0.6894587278366089,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "large orange circle center",
+        "score": 0.6142085194587708,
+        "target": false
+      }
+    ],
+    "retrieve the small three sided shape with red color near the center": [
+      {
+        "rank": 1,
+        "item": "small orange triangle center",
+        "score": 0.8133336305618286,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "small red triangle center",
+        "score": 0.7753546237945557,
+        "target": true
+      },
+      {
+        "rank": 3,
+        "item": "small blue triangle center",
+        "score": 0.7432689666748047,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple triangle center",
+        "score": 0.6424205303192139,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small blue triangle left",
+        "score": 0.6249432563781738,
+        "target": false
+      }
+    ],
+    "show me the tiny green five point shape at the left side": [
+      {
+        "rank": 1,
+        "item": "small green star left",
+        "score": 0.8272700309753418,
+        "target": true
+      },
+      {
+        "rank": 2,
+        "item": "large purple star left",
+        "score": 0.7766413688659668,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large green star left",
+        "score": 0.7749077081680298,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "small purple star left",
+        "score": 0.7718772292137146,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small green triangle left",
+        "score": 0.7053260803222656,
+        "target": false
+      }
+    ],
+    "please find a yellow five point shape that is large and on the right": [
+      {
+        "rank": 1,
+        "item": "large orange square right",
+        "score": 0.6244428753852844,
+        "target": false
+      },
+      {
+        "rank": 2,
+        "item": "large yellow square right",
+        "score": 0.6181076765060425,
+        "target": false
+      },
+      {
+        "rank": 3,
+        "item": "large yellow circle right",
+        "score": 0.6059821844100952,
+        "target": false
+      },
+      {
+        "rank": 4,
+        "item": "large orange circle right",
+        "score": 0.5765913128852844,
+        "target": false
+      },
+      {
+        "rank": 5,
+        "item": "small orange square right",
+        "score": 0.5224693417549133,
+        "target": false
+      }
+    ]
+  },
+  "artifacts": {
+    "metrics_chart": "/Users/kemingzeng/Documents/sofia/ai/clip_realistic_system/outputs/metrics_chart.png",
+    "loss_curve": "/Users/kemingzeng/Documents/sofia/ai/clip_realistic_system/outputs/loss_curve.png",
+    "architecture": "/Users/kemingzeng/Documents/sofia/ai/clip_realistic_system/outputs/architecture.png",
+    "qualitative_results": "/Users/kemingzeng/Documents/sofia/ai/clip_realistic_system/outputs/qualitative_results.png",
+    "model_checkpoint": "/Users/kemingzeng/Documents/sofia/ai/clip_realistic_system/outputs/mini_clip_realistic_model.pt"
+  }
+}
